@@ -1,0 +1,235 @@
+body{
+
+    margin: 0;
+    font-family: arial;
+}
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: white;
+}
+
+nav a{
+
+    margin: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+
+}
+
+.hero{
+
+    min-height: 100vh;
+    background:linear-gradient(120deg, #a18cd1, #fbc2ed);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+}
+
+.hero h1{
+
+    font-size: 55px;
+}
+
+.btn {
+
+    background: #6c3df4;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3sec;
+}
+
+.btn:hover{
+
+    background: #4b25c9;
+}
+
+.book-btn:hover{
+background:#434190;
+}
+
+.social-icons{
+margin-top:25px;
+}
+
+.social-icons a{
+margin:0 12px;
+font-size:26px;
+color:white;
+transition:0.3s;
+}
+
+.social-icons a:hover{
+color:#222;
+transform:scale(1.2);
+}
+
+.about{
+
+    padding: 80px;
+    text-align: center;
+
+}
+
+.classes {
+
+    padding: 80px;
+    text-align: center;
+    background: #f4f4f4;
+
+}
+
+.card-box{
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.card{
+
+    width: 260px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px
+    rgba(0,0,0,0.1);
+}
+
+.card img{
+
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.form-box{
+
+    width: 400;
+    margin: 100px auto;
+
+}
+input,select,textarea{
+    width: 100px;
+    padding: 12px;
+    margin: 10px 0;
+
+}
+footer{
+    background:linear-gradient(120deg, #a18cd1, #fbc2ed);
+
+ h3{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+ }
+
+ p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+ }
+
+.footer-social{
+margin:20px 0;
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 15px;
+}
+
+.footer-social a{
+margin:0 12px;
+font-size:24px;
+color:white;
+transition:0.3s;
+}
+
+.footer-social a:hover{
+color:white;
+transform:scale(1.3);
+}
+
+.copyright{
+font-size:13px;
+color:#000000;
+margin-top:15px;
+}
+}
+
+@media (max-width: 768px) {
+
+  /* Header fix */
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  /* 🔥 Navbar 2 upar 2 niche */
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 0;
+    padding: 8px;
+  }
+
+  /* 🔥 Hero section */
+  .hero {
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* 🔥 Heading bada */
+  .hero h1 {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* 🔥 General text */
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  /* 🔥 Form (contact page) */
+  form {
+    width: 100%;
+  }
+
+  input, textarea, select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+}

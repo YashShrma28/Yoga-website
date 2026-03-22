@@ -1,0 +1,178 @@
+<html>
+    <head>
+        
+    
+        <title>Contact Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+
+            body{
+    background:linear-gradient(120deg, #bfb9cd, #e1c8db);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2{
+    font-weight: bold;
+}
+
+form{
+    background: rgba(103, 54, 131, 0.05);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(18, 20, 30, 0.5);
+    width: 700px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    background: transparent;
+    color: black;
+    font-weight: bold;
+}
+
+input::placeholder,
+textarea::placeholder{
+    color: black;
+    font-weight: bold;}
+
+select{
+    color:black;
+    font-weight: bold;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #00c9a7;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #00a38c;
+}
+
+.thankyou{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    color: #00ffcc;
+}
+
+@media (max-width: 768px) {
+
+  /* Header fix (sab pages) */
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  /* Section spacing (About, Classes, Contact sab ke liye) */
+  section {
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Headings adjust */
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  /* Forms (Contact page ke liye) */
+  form {
+    width: 100%;
+  }
+
+  input, textarea, select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+}
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="from-box">
+
+            <h2>Book Your Yoga Session</h2>
+
+            <form action="https://formspree.io/f/mdawlzel" method="post">
+
+                <input type="text" name="Name" placeholder="Full Name" required="">
+
+                <input type="text" name="Email" placeholder="Email" required="">
+
+                <input type="tel" name="phone number" placeholder="Phone number" required="">
+                 <select>
+
+                    <option> Select Class </option>
+                    <option> Group Class </option>
+                    <option> Personal class</option>
+
+                 </select>
+                  
+                 <select>
+                    <option>Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                 </select>
+
+                 <select>
+                    <option>Country</option>
+                    <option>India</option>
+                    <option>Other</option>
+                 </select>
+
+                 <input type="text" rows="8" placeholder="Message" required="">
+
+                 <button type="submit">Send Message</button> 
+               <input type="hidden" name="_next" value="Thankyou.html">
+               <h1>Thank You !</h1>
+            </form>
+
+        </div>
+        
+  
+
+</body></html>
