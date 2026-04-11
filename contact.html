@@ -6,6 +6,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <style>
+          header{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: transparent;
+    text-align: center;
+    padding: 10px;
+
+}
+
+nav{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.btn {
+
+    background: #6c3df4;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3sec;
+}
+
+.btn:hover{
+
+    background: #4b25c9;
+}
 
             body{
     background:linear-gradient(120deg, #bfb9cd, #e1c8db);
@@ -128,9 +160,19 @@ button:hover{
 }
 
         </style>
+        
     </head>
 
     <body>
+      <header>
+        <nav>
+            <a href="index.html" class="btn">Home</a>
+            <a href="about.html" class="btn">about</a>
+            <a href="classes.html" class="btn">Classes</a>
+            <a href="contact.html" class="btn">Contact</a>
+
+        </nav>    
+      </header>
 
         <div class="from-box">
 
