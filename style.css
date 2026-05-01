@@ -67,12 +67,13 @@ nav a:hover{
 
 .hero h1{
 
+  margin: 10px;
     font-size: 50px;
     animation: fadeUp 1s ease;
 }
 
 .hero p{
-  margin: 10px 0;
+  margin: 18px 0;
   animation: fadeUp 1.5s ease;
 }
 
@@ -143,6 +144,10 @@ transform:scale(1.2);
     background:linear-gradient(120deg, #57469f, #c778b3);
     color: whitesmoke;
 
+}
+
+.about p {
+  margin: 10px;
 }
 
 .classes {
