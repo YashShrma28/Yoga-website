@@ -120,34 +120,29 @@ button:hover{
 
 @media (max-width: 768px) {
 
-  /* Header fix (sab pages) */
+  /* Header fix */
   header {
-    display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 15px;
   }
 
+  /* 🔥 Navbar 2 upar 2 niche */
   nav {
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
   }
 
   nav a {
-    display: block;
-    width: 80px;
-    text-align: center;
-    margin: 8px 0;
+    margin: 0;
+    padding: 8px;
   }
 
-  /* Section spacing (About, Classes, Contact sab ke liye) */
-  section {
-    padding: 20px;
-    text-align: center;
-  }
 
-  /* Headings adjust */
+  /* 🔥 General text */
   h1 {
     font-size: 24px;
   }
@@ -160,7 +155,7 @@ button:hover{
     font-size: 14px;
   }
 
-  /* Forms (Contact page ke liye) */
+  /* 🔥 Form (contact page) */
   form {
     width: 100%;
   }
@@ -177,6 +172,8 @@ button:hover{
 
     <body>
       <header>
+
+
         <nav>
             <a href="index.html" class="btn">Home</a>
             <a href="about.html" class="btn">about</a>
