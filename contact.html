@@ -18,12 +18,23 @@
 
 }
 
-nav{
+body{
+  overflow-x: hidden;
+}
+
+.navbar{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
   position: absolute;
   top: 20px;
   right: 30px;
+}
+
+.navbar a{
+  flex: 1 1 45%;
+  text-align: center;
 }
 
 .btn {
@@ -64,6 +75,19 @@ form{
     backdrop-filter: blur(10px);
     box-shadow: 0 10px 25px rgba(18, 20, 30, 0.5);
     width: 700px;
+}
+.form-box{
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+input,
+select,
+textarea{
+  width: 100%;
+  box-sizing: border-box;
 }
 
 h1{
@@ -118,35 +142,27 @@ button:hover{
     color: #00ffcc;
 }
 
-@media (max-width: 768px) {
 
-  /* Header fix */
-  header {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-  }
+@media (max-width: 768px){
 
-  /* 🔥 Navbar 2 upar 2 niche */
-  nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    width: 100%;
-    text-align: center;
-  }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
 
-  nav a {
-    margin: 0;
-    padding: 8px;
-  }
+    .navbar a{
+        width: 90%;
+    }
 
+    .form-container{
+        width: 95%;
+        padding: 15px;
+    }
 
-  /* 🔥 General text */
-  h1 {
-    font-size: 24px;
-  }
-
+    h1{
+        font-size: 28px;
+    }
+}
   h2 {
     font-size: 20px;
   }
