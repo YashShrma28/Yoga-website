@@ -22,21 +22,6 @@ body{
   overflow-x: hidden;
 }
 
-.navbar{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-  position: absolute;
-  top: 20px;
-  right: 30px;
-}
-
-.navbar a{
-  flex: 1 1 45%;
-  text-align: center;
-}
-
 .btn {
 
     background: #6c3df4;
@@ -142,27 +127,50 @@ button:hover{
     color: #00ffcc;
 }
 
+@media (max-width: 768px) {
 
-@media (max-width: 768px){
+  /* Header fix */
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
 
-    .navbar{
-        flex-direction: column;
-        align-items: center;
-    }
+  /* 🔥 Navbar 2 upar 2 niche */
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+  }
 
-    .navbar a{
-        width: 90%;
-    }
+  nav a {
+    margin: 0;
+    padding: 8px;
+  }
 
-    .form-container{
-        width: 95%;
-        padding: 15px;
-    }
+  /* 🔥 Hero section */
+  .hero {
+    padding: 20px;
+    text-align: center;
+  }
 
-    h1{
-        font-size: 28px;
-    }
-}
+  /* 🔥 Heading bada */
+  .hero h1 {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* 🔥 General text */
+  h1 {
+    font-size: 24px;
+  }
+
   h2 {
     font-size: 20px;
   }
@@ -182,6 +190,8 @@ button:hover{
   }
 
 }
+
+
         </style>
         
     </head>
@@ -190,13 +200,7 @@ button:hover{
       <header>
 
 
-        <nav>
-            <a href="index.html" class="btn">Home</a>
-            <a href="about.html" class="btn">about</a>
-            <a href="classes.html" class="btn">Classes</a>
-            <a href="contact.html" class="btn">Contact</a>
-
-        </nav>
+        
       </header>
 
         <div class="from-box">
