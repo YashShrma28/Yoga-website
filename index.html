@@ -1,113 +1,1771 @@
-<html>
-    <head>
-        <title>Yoga webpage</title>
-        
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!DOCTYPE html>
+<html lang="en">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-            <img src="logoo.jpeg">
-            <h2>Yoga With Neetu</h2>
-            </div>
+<head>
 
-            <!--hidden checkbox-->
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle"
-            class="menu-icon">☰</label>
-        <nav>
-            <a href="index.html" class="btn">Home</a>
-            <a href="about.html" class="btn">about</a>
-            <a href="classes.html" class="btn">Classes</a>
-            <a href="contact.html" class="btn">Contact</a>
+    <meta charset="UTF-8">
 
-        </nav>    
-        </header>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-        <section class="hero">
-            <div class="hero-content">
-                <H1>YOGA WITH NEETU</H1>
-                <h2>Balance Your Body &amp; Mind</h2>
-                <p> Discover inner peace with our professional yoga classes.
-                    Improve flexibility, strength and mental clarity.
-                </p>
+    <meta
+        name="description"
+        content="Yoga With Neetu — Breathe, Balance, Heal. Premium yoga, wellness and mindfulness sessions."
+    >
 
-                <a href="contact.html" class="btn">Book</a>
+    <title>Yoga With Neetu | Breathe • Balance • Heal</title>
 
-                <div class="social-icons">
+    <link rel="stylesheet" href="style.css">
 
-                   <a href="https://www.instagram.com/yogagirlneetu?igsh=MTNlZm5wdGpjMHBtcQ%3D%3D&amp;utm_source=qr"><i class="fab fa-instagram"></i></a>
-
-                    <a href="https://www.youtube.com/@Yogagirlneetu"><i class="fab fa-Youtube"></i></a>
-
-                    <a href="https://www.facebook.com/share/17GUAenNJf/?mibextid=wwXIfr"><i class="fab fa-Facebook"></i></a>
-
-                </div>
-            
-            </div>
-        </section>
+</head>
 
 
-        <section id="about" class="about">
-
-<h2>About Our Classes</h2>
-
-<p> Our yoga classe focuses on building strength,
-     flexibility and mindfulness through guided
-     sessionsfor beginners and advanced students.
-</p>
-
-        </section>
+<body>
 
 
-        <section id="classes" class="classes">
-    <h2>Our Yoga Programs</h2>
+<!-- =====================================================
+     PAGE LOADER
+===================================================== -->
 
-    <div class="card-box">
+<div class="page-loader">
 
-        <div class="card">
-            <img src="./yogap.webp">
-            <h3>Power Yoga</h3>
-            <p>Improve strength and stamina.</p>
-        </div>
+    <div class="loader-logo">
 
-        <div class="card">
-            <img src="./yogam.webp">
-            <h3>Morning Flow</h3>
-            <p>Start your day with positive energy.</p>
-        </div>
-
-        <div class="card">
-            <img src="./yogar.webp">
-            <h3>Relaxation Yoga</h3>
-            <p>Calm your mind and body.</p>
-        </div>
+        <img
+            src="assets/instructor.png"
+            alt="Yoga With Neetu"
+        >
 
     </div>
-</section>
-    
 
-    <footer class="footer">
-
-<h3>Yoga With Neetu</h3>
-
-<p>Find balance, peace and strength with our yoga sessions.</p>
-
-<div class="footer-social">
-<a href="https://www.instagram.com/yogagirlneetu?igsh=MTNlZm5wdGpjMHBtcQ%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
-<a href="https://www.youtube.com/@Yogagirlneetu"><i class="fab fa-youtube"></i></a>
-<a href="https://www.facebook.com/share/17GUAenNJf/?mibextid=wwXIfr"><i class="fab fa-facebook"></i></a>
 </div>
 
 
-<p class="copyright">
-© 2026 Yoga With neetu | All Rights Reserved
-</p>
-    </footer>
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="navbar" id="navbar">
+
+    <a
+        href="index.html"
+        class="brand"
+    >
+
+        <img
+            src="assets/logo.png"
+            alt="Yoga With Neetu Logo"
+        >
+
+        <div class="brand-text">
+
+            <strong>YOGA WITH NEETU</strong>
+
+            <span>Breathe • Balance • Heal</span>
+
+        </div>
+
+    </a>
 
 
-</body></html>
+    <!-- Desktop Navigation -->
+
+    <nav class="desktop-nav">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="classes.html">Classes</a>
+
+        <a href="#schedule">Schedule</a>
+
+        <a href="#pricing">Membership</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+
+    <a
+        href="contact.html"
+        class="nav-book"
+        onclick="bookWhatsApp('General Yoga Enquiry')"
+    >
+        Book a Session
+    </a>
+
+
+    <!-- Mobile Menu Button -->
+
+    <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Open menu"
+    >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+</header>
+
+
+
+<!-- =====================================================
+     MOBILE MENU
+===================================================== -->
+
+<div
+    class="mobile-menu"
+    id="mobileMenu"
+>
+
+    <div class="mobile-menu-inner">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About Neetu</a>
+
+        <a href="classes.html">Yoga Classes</a>
+
+        <a href="#schedule">Class Schedule</a>
+
+        <a href="#pricing">Membership</a>
+
+        <a href="#instagram">Instagram</a>
+
+        <a href="contact.html">Contact</a>
+
+        <button
+            onclick="bookWhatsApp('General Yoga Enquiry')"
+            class="mobile-book"
+        >
+            Book a Session
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<main>
+
+<section
+    class="hero"
+    id="home"
+>
+
+
+    <div class="hero-background-circle"></div>
+
+
+    <div
+        class="hero-content reveal"
+    >
+
+        <div class="eyebrow">
+
+            <span></span>
+
+            YOGA • WELLNESS • MINDFULNESS
+
+            <span></span>
+
+        </div>
+
+
+        <h1>
+
+            Come home
+            <br>
+
+            <em>to yourself.</em>
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            A mindful space to breathe deeper, move freely
+            and reconnect with the most important relationship
+            in your life — the one with yourself.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <button
+                class="gold-button"
+                onclick="bookWhatsApp('I would like to book my first yoga session.')"
+            >
+
+                Begin Your Journey
+
+                <span>→</span>
+
+            </button>
+
+
+            <a
+                href="classes.html"
+                class="outline-button"
+            >
+
+                Explore Classes
+
+            </a>
+
+        </div>
+
+
+        <div class="hero-trust">
+
+            <div>
+
+                <strong>01</strong>
+
+                <span>
+                    Mindful<br>
+                    Movement
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>02</strong>
+
+                <span>
+                    Conscious<br>
+                    Breathing
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>03</strong>
+
+                <span>
+                    Holistic<br>
+                    Wellness
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div
+        class="hero-visual reveal delay-2"
+    >
+
+        <div class="image-ring"></div>
+
+        <div class="image-glow"></div>
+
+
+        <img
+            src="assets/instructor.png"
+            alt="Neetu Yoga Instructor"
+            class="hero-instructor"
+        >
+
+
+        <div class="floating-card">
+
+            <span class="floating-icon">
+                ✦
+            </span>
+
+            <div>
+
+                <strong>
+                    Breathe
+                </strong>
+
+                <small>
+                    Find your balance
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="vertical-text">
+
+            YOGA WITH NEETU
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     MARQUEE
+===================================================== -->
+
+<section class="marquee">
+
+    <div class="marquee-track">
+
+        <span>BREATH</span>
+        <i>✦</i>
+
+        <span>BALANCE</span>
+        <i>✦</i>
+
+        <span>HEAL</span>
+        <i>✦</i>
+
+        <span>MINDFULNESS</span>
+        <i>✦</i>
+
+        <span>BREATH</span>
+        <i>✦</i>
+
+        <span>BALANCE</span>
+        <i>✦</i>
+
+        <span>HEAL</span>
+        <i>✦</i>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     INTRODUCTION
+===================================================== -->
+
+<section
+    class="philosophy section-padding"
+    id="about"
+>
+
+    <div class="section-label reveal">
+
+        <span></span>
+
+        THE YOGA WITH NEETU PHILOSOPHY
+
+        <span></span>
+
+    </div>
+
+
+    <div class="philosophy-grid">
+
+        <div class="reveal">
+
+            <h2>
+
+                Your body
+                <br>
+                <em>knows the way.</em>
+
+            </h2>
+
+        </div>
+
+
+        <div class="philosophy-text reveal delay-1">
+
+            <p class="large-text">
+
+                Yoga isn't about how flexible you are.
+                It's about how present you can become.
+
+            </p>
+
+            <p>
+
+                At Yoga With Neetu, every practice is an
+                invitation to slow down, listen to your body
+                and create space for yourself.
+
+            </p>
+
+            <a
+                href="#classes"
+                class="text-link"
+            >
+
+                Discover the practice
+
+                <span>↗</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT INSTRUCTOR
+===================================================== -->
+
+<section class="instructor-section section-padding">
+
+    <div class="instructor-image reveal">
+
+        <div class="image-decoration"></div>
+
+        <img
+            src="assets/instructor.png"
+            alt="Neetu — Yoga Instructor"
+        >
+
+        <div class="experience-badge">
+
+            <strong>YOGA</strong>
+
+            <span>WITH</span>
+
+            <strong>NEETU</strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="instructor-content reveal delay-1">
+
+        <div class="section-label left">
+
+            <span></span>
+
+            MEET YOUR INSTRUCTOR
+
+        </div>
+
+
+        <h2>
+
+            A practice that
+            <br>
+
+            <em>meets you where you are.</em>
+
+        </h2>
+
+
+        <p>
+
+            Hello, I'm Neetu Sharma.
+
+        </p>
+
+
+        <p>
+
+            I believe yoga is much more than a physical
+            practice. It is a beautiful journey of awareness,
+            strength, stillness and self-discovery.
+
+        </p>
+
+
+        <p>
+
+            My intention is to create a welcoming space where
+            you can leave the outside world behind, breathe
+            deeply and reconnect with yourself.
+
+        </p>
+
+
+        <div class="signature">
+
+            Neetu Sharma
+
+        </div>
+
+
+        <button
+            class="outline-button dark"
+            onclick="bookWhatsApp('I would like to know more about your yoga sessions.')"
+        >
+
+            Meet Me on the Mat
+
+            <span>→</span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CLASSES
+===================================================== -->
+
+<section
+    class="classes-section section-padding"
+    id="classes"
+>
+
+    <div class="section-header-row reveal">
+
+        <div>
+
+            <div class="section-label left">
+
+                <span></span>
+
+                THE PRACTICE
+
+            </div>
+
+            <h2>
+
+                Find your
+                <em>flow.</em>
+
+            </h2>
+
+        </div>
+
+
+        <p>
+
+            Whether you are beginning your journey or
+            deepening an existing practice, there is
+            space for you here.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="class-grid">
+
+
+        <!-- CLASS -->
+
+        <article class="class-card reveal">
+
+            <div class="class-top">
+
+                <span>01</span>
+
+                <span class="class-symbol">◯</span>
+
+            </div>
+
+            <h3>Hatha Yoga</h3>
+
+            <p>
+
+                Traditional postures, mindful breathing and
+                steady movement to build strength,
+                flexibility and awareness.
+
+            </p>
+
+            <div class="class-bottom">
+
+                <span>All Levels</span>
+
+                <span>60 Min</span>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="class-card featured reveal delay-1">
+
+            <div class="class-top">
+
+                <span>02</span>
+
+                <span class="class-symbol">✦</span>
+
+            </div>
+
+            <h3>Mindful Flow</h3>
+
+            <p>
+
+                A beautiful combination of movement,
+                breath and mindfulness designed to calm
+                the mind and energize the body.
+
+            </p>
+
+            <div class="class-bottom">
+
+                <span>All Levels</span>
+
+                <span>60 Min</span>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="class-card reveal delay-2">
+
+            <div class="class-top">
+
+                <span>03</span>
+
+                <span class="class-symbol">☾</span>
+
+            </div>
+
+            <h3>Women's Wellness</h3>
+
+            <p>
+
+                Supportive practices designed around
+                strength, mobility, relaxation and
+                women's wellbeing.
+
+            </p>
+
+            <div class="class-bottom">
+
+                <span>Women</span>
+
+                <span>60 Min</span>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="class-card reveal">
+
+            <div class="class-top">
+
+                <span>04</span>
+
+                <span class="class-symbol">△</span>
+
+            </div>
+
+            <h3>Power Yoga</h3>
+
+            <p>
+
+                A stronger, energizing practice for building
+                stamina, confidence and physical strength.
+
+            </p>
+
+            <div class="class-bottom">
+
+                <span>Intermediate</span>
+
+                <span>60 Min</span>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="class-card reveal delay-1">
+
+            <div class="class-top">
+
+                <span>05</span>
+
+                <span class="class-symbol">☼</span>
+
+            </div>
+
+            <h3>Deep Relaxation</h3>
+
+            <p>
+
+                Gentle movement, breathwork and relaxation
+                to help release tension and restore your energy.
+
+            </p>
+
+            <div class="class-bottom">
+
+                <span>All Levels</span>
+
+                <span>45 Min</span>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="class-card reveal delay-2">
+
+            <div class="class-top">
+
+                <span>06</span>
+
+                <span class="class-symbol">ॐ</span>
+
+            </div>
+
+            <h3>Meditation</h3>
+
+            <p>
+
+                Guided meditation and conscious breathing
+                to develop stillness, focus and inner peace.
+
+            </p>
+
+            <div class="class-bottom">
+
+                <span>All Levels</span>
+
+                <span>30 Min</span>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CLASS SCHEDULE
+===================================================== -->
+
+<section
+    class="schedule-section section-padding"
+    id="schedule"
+>
+
+    <div class="schedule-heading reveal">
+
+        <div class="section-label left">
+
+            <span></span>
+
+            WEEKLY SCHEDULE
+
+        </div>
+
+        <h2>
+
+            Make time
+            <em>for yourself.</em>
+
+        </h2>
+
+        <p>
+
+            Choose a time that works for you and reserve
+            your place on the mat.
+
+        </p>
+
+    </div>
+
+
+    <div class="schedule-table reveal delay-1">
+
+
+        <div class="schedule-header">
+
+            <span>Day</span>
+
+            <span>Time</span>
+
+            <span>Practice</span>
+
+            <span>Level</span>
+
+            <span></span>
+
+        </div>
+
+
+        <div class="schedule-row">
+
+            <strong>Monday</strong>
+
+            <span>7:00 AM</span>
+
+            <span>Hatha Yoga</span>
+
+            <span>All Levels</span>
+
+            <button
+                onclick="bookWhatsApp('I would like to book the Monday 7:00 AM Hatha Yoga class.')"
+            >
+                Book
+            </button>
+
+        </div>
+
+
+        <div class="schedule-row">
+
+            <strong>Tuesday</strong>
+
+            <span>6:00 PM</span>
+
+            <span>Mindful Flow</span>
+
+            <span>All Levels</span>
+
+            <button
+                onclick="bookWhatsApp('I would like to book the Tuesday 6:00 PM Mindful Flow class.')"
+            >
+                Book
+            </button>
+
+        </div>
+
+
+        <div class="schedule-row">
+
+            <strong>Wednesday</strong>
+
+            <span>7:00 AM</span>
+
+            <span>Women's Wellness</span>
+
+            <span>All Levels</span>
+
+            <button
+                onclick="bookWhatsApp('I would like to book the Wednesday 7:00 AM Womens Wellness class.')"
+            >
+                Book
+            </button>
+
+        </div>
+
+
+        <div class="schedule-row">
+
+            <strong>Thursday</strong>
+
+            <span>6:00 PM</span>
+
+            <span>Power Yoga</span>
+
+            <span>Intermediate</span>
+
+            <button
+                onclick="bookWhatsApp('I would like to book the Thursday 6:00 PM Power Yoga class.')"
+            >
+                Book
+            </button>
+
+        </div>
+
+
+        <div class="schedule-row">
+
+            <strong>Saturday</strong>
+
+            <span>8:00 AM</span>
+
+            <span>Beginner Yoga</span>
+
+            <span>Beginner</span>
+
+            <button
+                onclick="bookWhatsApp('I would like to book the Saturday 8:00 AM Beginner Yoga class.')"
+            >
+                Book
+            </button>
+
+        </div>
+
+
+        <div class="schedule-row">
+
+            <strong>Sunday</strong>
+
+            <span>7:00 AM</span>
+
+            <span>Meditation</span>
+
+            <span>All Levels</span>
+
+            <button
+                onclick="bookWhatsApp('I would like to book the Sunday 7:00 AM Meditation class.')"
+            >
+                Book
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PRICING
+===================================================== -->
+
+<section
+    class="pricing-section section-padding"
+    id="pricing"
+>
+
+    <div class="pricing-heading reveal">
+
+        <div class="section-label">
+
+            <span></span>
+
+            MEMBERSHIP
+
+            <span></span>
+
+        </div>
+
+        <h2>
+
+            Invest in
+            <em>your wellbeing.</em>
+
+        </h2>
+
+        <p>
+
+            Start where you are. Choose the practice that
+            fits your lifestyle.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="pricing-grid">
+
+
+        <!-- DROP IN -->
+
+        <div class="price-card reveal">
+
+            <div class="price-top">
+
+                <span>FLEXIBLE</span>
+
+                <h3>Drop-In</h3>
+
+                <p>
+                    Perfect for trying a class.
+                </p>
+
+            </div>
+
+            <div class="price">
+
+                <small>₹</small>
+
+                299
+
+                <span>/ class</span>
+
+            </div>
+
+            <ul>
+
+                <li>✓ One yoga session</li>
+
+                <li>✓ All-level classes</li>
+
+                <li>✓ Guided practice</li>
+
+                <li>✓ Breathwork</li>
+
+            </ul>
+
+            <button
+                onclick="bookWhatsApp('I would like to book a Drop-In yoga class.')"
+                class="price-button"
+            >
+
+                Book a Class
+
+            </button>
+
+        </div>
+
+
+
+        <!-- MONTHLY -->
+
+        <div class="price-card popular reveal delay-1">
+
+            <div class="popular-tag">
+
+                MOST POPULAR
+
+            </div>
+
+            <div class="price-top">
+
+                <span>CONSISTENCY</span>
+
+                <h3>Monthly</h3>
+
+                <p>
+                    Make yoga part of your routine.
+                </p>
+
+            </div>
+
+            <div class="price">
+
+                <small>₹</small>
+
+                999
+
+                <span>/ month</span>
+
+            </div>
+
+            <ul>
+
+                <li>✓ Up to 12 classes</li>
+
+                <li>✓ Multiple class styles</li>
+
+                <li>✓ Guided meditation</li>
+
+                <li>✓ Breathwork sessions</li>
+
+                <li>✓ Member support</li>
+
+            </ul>
+
+            <button
+                onclick="bookWhatsApp('I am interested in the Monthly Yoga Membership.')"
+                class="price-button gold"
+            >
+
+                Start Monthly Plan
+
+            </button>
+
+        </div>
+
+
+
+        <!-- PRIVATE -->
+
+        <div class="price-card reveal delay-2">
+
+            <div class="price-top">
+
+                <span>PERSONALIZED</span>
+
+                <h3>Private</h3>
+
+                <p>
+                    One-to-one personalised guidance.
+                </p>
+
+            </div>
+
+            <div class="price">
+
+                <small>₹</small>
+
+                1,499
+
+                <span>/ session</span>
+
+            </div>
+
+            <ul>
+
+                <li>✓ Personal consultation</li>
+
+                <li>✓ Customized practice</li>
+
+                <li>✓ One-to-one guidance</li>
+
+                <li>✓ Flexible scheduling</li>
+
+            </ul>
+
+            <button
+                onclick="bookWhatsApp('I am interested in a Private Yoga Session.')"
+                class="price-button"
+            >
+
+                Book Private Session
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     QUOTE
+===================================================== -->
+
+<section class="quote-section">
+
+    <div class="quote-symbol">“</div>
+
+    <blockquote class="reveal">
+
+        Yoga is the journey of
+        <em>the self,</em>
+        through the self,
+        to the self.
+
+    </blockquote>
+
+    <span class="quote-line"></span>
+
+    <small>
+        — THE BHAGAVAD GITA
+    </small>
+
+</section>
+
+
+
+<!-- =====================================================
+     INSTAGRAM
+===================================================== -->
+
+<section
+    class="instagram-section section-padding"
+    id="instagram"
+>
+
+    <div class="instagram-header reveal">
+
+        <div>
+
+            <div class="section-label left">
+
+                <span></span>
+
+                FOLLOW THE JOURNEY
+
+            </div>
+
+            <h2>
+
+                Life between
+                <em>the poses.</em>
+
+            </h2>
+
+        </div>
+
+
+        <a
+            href="https://www.instagram.com/yogagirlneetu?igsh=MTNlZm5wdGpjMHBtcQ%3D%3D&utm_source=qr"
+            class="instagram-link"
+        >
+
+            @yogawithneetu
+
+            <span>↗</span>
+
+        </a>
+
+    </div>
+
+
+
+    <div class="instagram-grid">
+
+
+        <div class="insta-card tall reveal">
+
+            <img
+                src="assets/instructor.png"
+                alt="Yoga With Neetu"
+            >
+
+            <div class="insta-overlay">
+
+                <span>♡</span>
+
+                <p>
+                    Find your balance.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="insta-card reveal delay-1">
+
+            <div class="insta-placeholder">
+
+                <span>ॐ</span>
+
+                <p>
+                    Breathe
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="insta-card reveal delay-2">
+
+            <div class="insta-placeholder gold-bg">
+
+                <span>✦</span>
+
+                <p>
+                    Balance
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="insta-card reveal delay-1">
+
+            <div class="insta-placeholder green-bg">
+
+                <span>☾</span>
+
+                <p>
+                    Restore
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="insta-card reveal delay-2">
+
+            <div class="insta-placeholder">
+
+                <span>🌿</span>
+
+                <p>
+                    Heal
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TESTIMONIALS
+===================================================== -->
+
+<section class="testimonials section-padding">
+
+    <div class="section-label reveal">
+
+        <span></span>
+
+        STUDENT EXPERIENCES
+
+        <span></span>
+
+    </div>
+
+
+    <h2 class="testimonial-title reveal">
+
+        What happens when
+        <em>you slow down.</em>
+
+    </h2>
+
+
+    <div class="testimonial-grid">
+
+
+        <article class="testimonial reveal">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+
+                “The sessions have completely changed how
+                I approach my mornings. I feel calmer,
+                stronger and much more connected to myself.”
+
+            </p>
+
+            <strong>
+                Yoga Student
+            </strong>
+
+        </article>
+
+
+        <article class="testimonial featured-testimonial reveal delay-1">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+
+                “I started as a complete beginner and never
+                felt uncomfortable. The guidance is gentle,
+                clear and incredibly encouraging.”
+
+            </p>
+
+            <strong>
+                Yoga Student
+            </strong>
+
+        </article>
+
+
+        <article class="testimonial reveal delay-2">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+
+                “Yoga has finally become something I look
+                forward to rather than something I feel
+                I have to do.”
+
+            </p>
+
+            <strong>
+                Yoga Student
+            </strong>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FINAL CTA
+===================================================== -->
+
+<section
+    class="final-cta"
+    id="contact"
+>
+
+    <div class="cta-decoration one">✦</div>
+
+    <div class="cta-decoration two">◌</div>
+
+
+    <div class="cta-content reveal">
+
+        <div class="section-label">
+
+            <span></span>
+
+            YOUR MAT IS WAITING
+
+            <span></span>
+
+        </div>
+
+
+        <h2>
+
+            Take a breath.
+            <br>
+
+            <em>Begin again.</em>
+
+        </h2>
+
+
+        <p>
+
+            You don't need to be flexible.
+            You don't need to be experienced.
+            You simply need to begin.
+
+        </p>
+
+
+        <button
+            class="gold-button large"
+            onclick="bookWhatsApp('Hello Neetu! I would like to book a yoga session.')"
+        >
+
+            Book Your First Session
+
+            <span>→</span>
+
+        </button>
+
+
+        <div class="whatsapp-note">
+
+            <span class="whatsapp-dot"></span>
+
+            Quick booking via WhatsApp
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-main">
+
+
+        <div class="footer-brand">
+
+            <img
+                src="assets/logo.png"
+                alt="Yoga With Neetu"
+            >
+
+            <p>
+
+                A mindful space to breathe,
+                balance and heal.
+
+            </p>
+
+
+            <div class="socials">
+
+                <a href="https://www.instagram.com/yogagirlneetu?igsh=MTNlZm5wdGpjMHBtcQ%3D%3D&utm_source=qr" aria-label="Instagram">
+                    IG
+                </a>
+
+                <a href="https://wa.me/6367063690" aria-label="whatsapp" onclick="bookWhatsApp('Hello Neetu! I would like to enquire about yoga classes.')">
+                    WA
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>Explore</h4>
+
+            <a href="about.html">About Neetu</a>
+
+            <a href="classes.html">Yoga Classes</a>
+
+            <a href="schedule.html">Schedule</a>
+
+            <a href="pricing.html">Membership</a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>Practice</h4>
+
+            <a href="classes.html">Hatha Yoga</a>
+
+            <a href="classes.html">Mindful Flow</a>
+
+            <a href="classes.html">Women's Wellness</a>
+
+            <a href="classes.html">Meditation</a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>Connect</h4>
+
+            <a
+                href="contact.html"
+                onclick="bookWhatsApp('Hello Neetu! I would like to enquire about yoga classes.')"
+            >
+                WhatsApp
+            </a>
+
+            <a href="https://www.instagram.com/yogagirlneetu?igsh=MTNlZm5wdGpjMHBtcQ%3D%3D&utm_source=qr" aria-label="Instagram">
+                Instagram
+            </a>
+
+            <a href="contact.html">
+                Book a Session
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 Yoga With Neetu
+        </span>
+
+        <span>
+            Breathe • Balance • Heal
+        </span>
+
+        <span>
+            Made with intention ✦
+        </span>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   PAGE LOADER
+===================================================== */
+
+window.addEventListener("load", function() {
+
+    setTimeout(function() {
+
+        document
+            .querySelector(".page-loader")
+            .classList
+            .add("loaded");
+
+    }, 500);
+
+});
+
+
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+const hamburger =
+    document.getElementById("hamburger");
+
+const mobileMenu =
+    document.getElementById("mobileMenu");
+
+
+hamburger.addEventListener(
+    "click",
+    function() {
+
+        hamburger.classList.toggle("active");
+
+        mobileMenu.classList.toggle("active");
+
+    }
+);
+
+
+document
+    .querySelectorAll(".mobile-menu a")
+    .forEach(function(link) {
+
+        link.addEventListener(
+            "click",
+            function() {
+
+                hamburger.classList.remove("active");
+
+                mobileMenu.classList.remove("active");
+
+            }
+        );
+
+    });
+
+
+
+/* =====================================================
+   NAVBAR SCROLL EFFECT
+===================================================== */
+
+window.addEventListener(
+    "scroll",
+    function() {
+
+        const navbar =
+            document.getElementById("navbar");
+
+        if (window.scrollY > 50) {
+
+            navbar.classList.add("scrolled");
+
+        } else {
+
+            navbar.classList.remove("scrolled");
+
+        }
+
+    }
+);
+
+
+
+/* =====================================================
+   SCROLL REVEAL ANIMATION
+===================================================== */
+
+const revealElements =
+    document.querySelectorAll(".reveal");
+
+
+const revealObserver =
+    new IntersectionObserver(
+        function(entries, observer) {
+
+            entries.forEach(function(entry) {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("visible");
+
+                    observer.unobserve(entry.target);
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.12
+        }
+    );
+
+
+revealElements.forEach(function(element) {
+
+    revealObserver.observe(element);
+
+});
+
+
+
+/* =====================================================
+   WHATSAPP BOOKING
+===================================================== */
+
+/*
+    IMPORTANT:
+
+    Replace 919999999999 with your real
+    
+*/
+
+
+const whatsappNumber =
+    "6367063690";
+
+
+function bookWhatsApp(message) {
+
+    const encodedMessage =
+        encodeURIComponent(message);
+
+    const whatsappURL =
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        encodedMessage;
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
