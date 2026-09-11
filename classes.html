@@ -1,130 +1,377 @@
-<html>
-    
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
 
-    <title>Classes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-    <style>
-    
-    header{
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 60px;
-    background: transparent;
-    text-align: center;
-    padding: 10px;
+    <title>Yoga Classes | Yoga With Neetu</title>
 
-}
+    <meta name="description"
+          content="Explore online yoga classes with Neetu Sharma including Hatha Yoga, Mindful Flow, Power Yoga, Women's Wellness, Relaxation and Meditation.">
 
-nav{
-  display: flex;
-  gap: 25px;
-  position: absolute;
-  top: 20px;
-  right: 30px;
-}
+    <meta name="robots" content="index, follow">
 
-.btn {
+    <link rel="canonical"
+          href="https://yogawithneetu.in/classes.html">
 
-    background: #6c3df4;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: 0.3sec;
-}
+    <meta name="author"
+          content="Neetu Sharma">
 
-.btn:hover{
-
-    background: #4b25c9;
-}
-
-    body{
-        background:linear-gradient(120deg, #81cd67, #7bcbd4);
-        margin: 0;
-        height: 100vh;
-        justify-content: center;
-        font-family: Arial;
-        text-align: center;
-        display: flex;
-        align-items: center;
-
-    }
-
-    .box{
-        text-align: center;
-        font-weight: bold;
-    }
-
-    @media (max-width: 768px) {
-
-  /* Header fix (sab pages) */
-  header {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-  }
-
-  nav a {
-    display: block;
-    margin: 8px 0;
-  }
-
-  /* Section spacing (About, Classes, Contact sab ke liye) */
-  section {
-    padding: 20px;
-    text-align: center;
-  }
-
-  /* Headings adjust */
-  h1 {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-
-  /* Forms (Contact page ke liye) */
-  form {
-    width: 100%;
-  }
-
-  input, textarea, select {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-}
-        </style>
-
+    <link rel="stylesheet"
+          href="style.css">
 
 </head>
 
-<body>
 
-  <header>
+<body class="inner-page">
 
-    
-        <nav>
-            <a href="index.html" class="btn">Home</a>
-            <a href="about.html" class="btn">about</a>
-            <a href="classes.html" class="btn">Classes</a>
-            <a href="contact.html" class="btn">Contact</a>
 
-        </nav>    
-      </header>
-    
-    <div class="coming-soon">
-        <h2>Coming soon</h2>
-        <p>This page will be updated with new content soon. Stay tuned</p>
+<!-- NAVBAR -->
+
+<header class="inner-navbar">
+
+    <a href="index.html" class="inner-brand">
+
+        <img src="./logo.png"
+             alt="Yoga With Neetu Logo">
+
+        <div>
+            <strong>YOGA WITH NEETU</strong>
+            <span>Breathe • Balance • Heal</span>
+        </div>
+
+    </a>
+
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="classes.html" class="active">
+            Classes
+        </a>
+
+        <a href="index.html#schedule">
+            Schedule
+        </a>
+
+        <a href="index.html#pricing">
+            Membership
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="inner-hero">
+
+    <div class="inner-hero-content">
+
+        <span class="inner-eyebrow">
+            YOGA • WELLNESS • MINDFULNESS
+        </span>
+
+        <h1>
+            Find your
+            <em>flow.</em>
+        </h1>
+
+        <p>
+            Discover mindful online yoga classes designed
+            to help you move better, breathe deeper and
+            feel more balanced.
+        </p>
+
+        <a href="contact.html"
+           class="inner-gold-btn">
+            Book Your Class →
+        </a>
+
     </div>
 
-</body></html>
+</section>
+
+
+<!-- CLASSES -->
+
+<section class="classes-page-section">
+
+    <div class="page-heading">
+
+        <span>THE PRACTICE</span>
+
+        <h2>
+            Choose the practice
+            <em>that feels right.</em>
+        </h2>
+
+        <p>
+            Whether you are a beginner or already have a
+            regular yoga practice, there is a space for you.
+        </p>
+
+    </div>
+
+
+    <div class="classes-page-grid">
+
+
+        <article class="class-page-card">
+
+            <div class="card-number">01</div>
+
+            <div class="class-icon">◯</div>
+
+            <h3>Hatha Yoga</h3>
+
+            <p>
+                Traditional yoga postures, mindful breathing
+                and steady movement to improve flexibility,
+                strength and body awareness.
+            </p>
+
+            <div class="class-info">
+                <span>All Levels</span>
+                <span>60 Min</span>
+            </div>
+
+        </article>
+
+
+        <article class="class-page-card featured-card">
+
+            <div class="card-number">02</div>
+
+            <div class="class-icon">✦</div>
+
+            <h3>Mindful Flow</h3>
+
+            <p>
+                A flowing combination of movement, breath
+                and mindfulness to calm the mind and
+                energize the body.
+            </p>
+
+            <div class="class-info">
+                <span>All Levels</span>
+                <span>60 Min</span>
+            </div>
+
+        </article>
+
+
+        <article class="class-page-card">
+
+            <div class="card-number">03</div>
+
+            <div class="class-icon">☾</div>
+
+            <h3>Women's Wellness</h3>
+
+            <p>
+                Supportive yoga practices focused on
+                strength, mobility, relaxation and
+                overall women's wellbeing.
+            </p>
+
+            <div class="class-info">
+                <span>Women</span>
+                <span>60 Min</span>
+            </div>
+
+        </article>
+
+
+        <article class="class-page-card">
+
+            <div class="card-number">04</div>
+
+            <div class="class-icon">△</div>
+
+            <h3>Power Yoga</h3>
+
+            <p>
+                An energetic practice designed to build
+                stamina, confidence, physical strength
+                and body control.
+            </p>
+
+            <div class="class-info">
+                <span>Intermediate</span>
+                <span>60 Min</span>
+            </div>
+
+        </article>
+
+
+        <article class="class-page-card">
+
+            <div class="card-number">05</div>
+
+            <div class="class-icon">☼</div>
+
+            <h3>Deep Relaxation</h3>
+
+            <p>
+                Gentle movement, breathing and relaxation
+                techniques to release tension and restore
+                your energy.
+            </p>
+
+            <div class="class-info">
+                <span>All Levels</span>
+                <span>45 Min</span>
+            </div>
+
+        </article>
+
+
+        <article class="class-page-card">
+
+            <div class="card-number">06</div>
+
+            <div class="class-icon">ॐ</div>
+
+            <h3>Meditation</h3>
+
+            <p>
+                Guided meditation and conscious breathing
+                to encourage stillness, focus and inner peace.
+            </p>
+
+            <div class="class-info">
+                <span>All Levels</span>
+                <span>30 Min</span>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- BENEFITS -->
+
+<section class="class-benefits">
+
+    <div class="page-heading">
+
+        <span>WHY PRACTICE YOGA?</span>
+
+        <h2>
+            More than movement.
+            <em>A way of living.</em>
+        </h2>
+
+    </div>
+
+
+    <div class="benefits-grid">
+
+        <div>
+            <strong>01</strong>
+            <h3>Flexibility & Strength</h3>
+            <p>
+                Build a stronger and more flexible body
+                through consistent practice.
+            </p>
+        </div>
+
+
+        <div>
+            <strong>02</strong>
+            <h3>Stress Relief</h3>
+            <p>
+                Slow down, breathe deeply and create
+                more calm in your daily life.
+            </p>
+        </div>
+
+
+        <div>
+            <strong>03</strong>
+            <h3>Better Posture</h3>
+            <p>
+                Improve body awareness and develop
+                healthier movement patterns.
+            </p>
+        </div>
+
+
+        <div>
+            <strong>04</strong>
+            <h3>Inner Peace</h3>
+            <p>
+                Connect your breath, body and mind
+                through mindful practice.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="inner-cta">
+
+    <span>YOUR MAT IS CALLING</span>
+
+    <h2>
+        Begin your yoga
+        <em>journey today.</em>
+    </h2>
+
+    <p>
+        Online yoga classes with Neetu Sharma.
+    </p>
+
+    <a href="contact.html"
+       class="inner-gold-btn">
+        Book Your Slot →
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="inner-footer">
+
+    <h3>YOGA WITH NEETU</h3>
+
+    <p>
+        Breathe • Balance • Heal
+    </p>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="classes.html">Classes</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <small>
+        © 2026 Yoga With Neetu. All Rights Reserved.
+    </small>
+
+</footer>
+
+
+</body>
+</html>
